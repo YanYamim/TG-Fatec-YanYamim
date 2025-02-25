@@ -4,8 +4,18 @@ Introdução
 Sou Yan e atuo como desenvolvedor de software com experiẽncia em Java, Python e SQL, focando mais no desenvolvimento de API's e modelagem de dados. Além disso, tenho afinidade com alguns frameworks como SpringBoot e Vue.js e usando Docker para melhor integração de projetos. Meu foco está na criação de soluções escaláveis e eficientes, utilizando boas práticas de desenvolvimento e arquitetura de software. Atualmente, estou no início de carreira e cursando a faculdade de Banco de Dados pela Fatec de São José dos Campos mas sempre disposto a novas oportunidades.
 
 Contatos
-  https://github.com/YanYamim
-  https://linkedin.com.br/in/yan-yamim-185220278/
+###
+
+<div align="left">
+  <a href="https://www.linkedin.com/in/yan-yamim-185220278/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge" height="40" alt="linkedin logo"  />
+  </a>
+  <a href="https://github.com/YanYamim" target="_blank">  
+    <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=for-the-badge" height="40" alt="github logo"  />
+  </a>
+</div>
+
+###
 
 Meus Principais Conhecimentos
 
@@ -20,18 +30,45 @@ A solução desse problema foi criar um sistema web para mapear portais de notí
 https://github.com/c137santos/FATEC-API-3-SEMESTRE
 
 Tecnologias usadas:
-  Java
-  SpringBoot
-  Docker
-  Hibernate
-  PostgresSQl
-  Vue.js
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="40" alt="java logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" height="40" alt="spring logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="40" alt="docker logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="40" alt="postgresql logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" height="40" alt="vuejs logo"  />
+</div>
+
+###
 
 Contribuições Pessoais
 Método responsável pelo cadastro de Tags e de Portais, possibilidade de relacionar várias tags a um portal de notícia tanto no cadastro quanto na edição, correção de bug envolvento registro de portais, exibição do conteúdo da notícia através de um pop-up
 
 Hard Skills
-Git, Java, SpringBoot, postgresql, Docker, Vue.js, html, css e JavaScript
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" alt="git logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="40" alt="java logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" height="40" alt="spring logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="40" alt="postgresql logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="40" alt="docker logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" height="40" alt="vuejs logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
+</div>
+
+###
 
 Soft Skills
 Comunicação - Precisei exercitar essa habilidade para pedir ajuda em momentos de dificuldade
