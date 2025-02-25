@@ -66,7 +66,8 @@ Para anteder a essa demanda a solução foi um sistema em python com uma tela de
 
 [Link do Repositório](https://github.com/VCCorpTeam/Leitor-de-clima.git)
 
-O cliente na 2°Api foi o professor Emanuel Mineda que estava com um problema de não conseguir ter relatórios climáticos precisos de um determinado período de tempo
+O cliente na 2°Api foi o professor Emanuel Mineda cuja falta de relatórios climáticos precisos o dificultava à análisar padrões meteorológicos em determinadas regiões do estado de São Paulo. Sem uma ferramenta adequada para processar grandes volumes de dados históricos, a interpretação das informações sobre temperatura, umidade e precipitação se tornava complexa e propensa a erros. Outrossim, a ausência de representações gráficas limitava a visualização e a compreensão dos dados climáticos ao longo do tempo.
+A partir disso, Desenvolvemos uma aplicação desktop utilizando Java e JavaFX, integrada a um banco de dados MySQL, para processar e interpretar arquivos CSV contendo dados climáticos de diversas cidades e regiões. A aplicação gera relatórios detalhados em texto sobre médias de temperatura, umidade e precipitação em períodos específicos. Além disso, fornece coordenadas para a construção de gráficos boxplot, permitindo uma análise visual mais eficiente e facilitando a tomada de decisões baseada em dados climáticos confiáveis.
 
 ### Tecnologias Usadas
 
