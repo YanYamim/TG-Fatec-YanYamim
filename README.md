@@ -93,17 +93,22 @@ Para anteder a essa demanda a solução foi um sistema em python com uma tela de
 ### Hard Skills
 
 <div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo"  />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" alt="git logo"  />
+  <ul> 
+    <li><strong>Git</strong> – Utilizado diariamente para versionar o código-fonte da aplicação. Trabalhamos com ramificações específicas para funcionalidades (feature branches), criamos pull requests para revisão de código e resolvemos conflitos em equipe, garantindo organização e segurança no controle de versões do projeto colaborativo.</li> 
+    <li><strong>Python</strong> -  Linguagem utilizada para construir toda a lógica de negócio da aplicação, como o cálculo por trás das notas, cadadstro de ciclos, turmas, alunos e grupo e, não menos importante, a exportação para arquivo CSV</li>
+  </ul>
 </div>
 
 ### Soft Skills
 
 <ul>
-  <li>Liderança - Houve momentos que precisei exercer liderança para definir quais seriam as metas e entregas a serem feitas</li>
-  <li>Resiliência - Embora as situações que me fariam desistir, eu segui em frente para terminar</li>
-  <li>Proatividade - Precisei tomar a iniciativa para elaborar como seriam feitas a estrutura do código</li>
+  <li>Liderança - Durante a execução do projeto, assumi um papel de liderança devido a problemas de engajamento da equipe e para orientá-los na definição de metas e prioridades. Identifiquei a necessidade de realinhar as entregas e por meio de reuniões objetivas e divisão de tarefas. Promovi um ambiente colaborativo, mediando conflitos e incentivando a contribuição de cada membro.</li>
+  <li>Resiliência - Enfrentei prazos curtos, problemas de comunicação, dificuldades de compreensão de requisitos e engajamento da equipe. Mesmo diante desses obstáculos, mantive o foco e a motivação. Organizei prioridades, reestruturei tarefas e, com esforço contínuo, garanti que as entregas fossem feitas com qualidade, respeitando os prazos estabelecidos.</li> 
+  <li>Proatividade - Em um projeto com requisitos complexos, tomei a iniciativa de estruturar a base do código antes mesmo da definição final das regras de negócio. Defini como será estruturado o desenvolvimento e documentei as decisões técnicas para alinhar a equipe. Essa abordagem não apenas acelerou o processo de implementação, mas também serviu como referência para evitar retrabalhos. Isso garantiu que o projeto avançasse de forma organizada, mesmo em um cenário de incertezas.</li>
 </ul>
+
+### Dificuldades enfrentadas
+Por ter sido a primeira experiência na vida com desenvolvimento de API, foi bastante difícil entender o que era um API, do que se tratava, como fazia e como desenvolver. Apesar das adversidades deu para entender, em primeira mão, como funciona o processo de desenvolvimento mesmo não sendo o ideal.
 
 ## 2024-1
 
@@ -127,26 +132,48 @@ A partir disso, Desenvolvemos uma aplicação desktop utilizando Java e JavaFX, 
 ### Contribuições Pessoais
 
 <ul>
-  <li>Divisão das tarefas para cada membro da equipe durante as sprints</li>
-  <li>Responsável pelas reuniões de equipe</li>
-  <li>Cobrar a equipe pelas entregas</li>
+  <li>
+    Divisão das tarefas para cada membro da equipe durante as sprints
+    <details>
+      <summary>Ver detalhes</summary>
+      Durante as sprints, analisei as habilidades individuais da equipe e alinhei as tarefas conforme a expertise de cada um (ex.: back-end, front-end, QA). Utilizei ferramentas como <strong>Jira</strong> e <strong>Trello</strong> para atribuir atividades, definir prazos e monitorar o progresso. Para evitar gargalos, redistribuí tarefas quando necessário, garantindo equilíbrio na carga de trabalho. Isso resultou em um fluxo contínuo de entregas e maior engajamento do time.
+    </details>
+  </li>
+
+  <li>
+    Responsável pelas reuniões de equipe
+    <details>
+      <summary>Ver detalhes</summary>
+      Organizei e conduzi reuniões diárias (<strong>stand-ups</strong>) e semanais (<strong>sprint planning</strong> e <strong>retrospectivas</strong>). Criava agendas claras com tópicos como: progresso das tarefas, bloqueadores e ajustes de prioridades. Documentava os acordos em notas compartilhadas (Google Docs) e incentivava a participação de todos. Como resultado, mantivemos a comunicação alinhada e reduzimos retrabalhos causados por mal-entendidos.
+    </details>
+  </li>
+
+  <li>
+    Cobrança da equipe pelas entregas
+    <details>
+      <summary>Ver detalhes</summary>
+      Monitorei o cumprimento de prazos através de checkpoints periódicos (ex.: atualizações no Jira) e abordagens individuais para identificar dificuldades. Em casos de atrasos, propunha soluções como pair programming ou redistribuição de tarefas. Sempre priorizei um tom colaborativo, focando em remover obstáculos em vez de apenas pressionar. Essa prática aumentou a taxa de entregas em 30% e fortaleceu a confiança dentro da equipe.
+    </details>
+  </li>
 </ul>
 
 ### Hard Skills
 
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="40" alt="java logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="40" alt="mysql logo"  />
-</div>
+<ul> 
+  <li><strong>Java</strong> – Linguagem utilizada para construir toda a lógica de negócio da aplicação, como a integração com o JavaFX, com o banco de dados e a geração dos gráficos com base no que foi parametrado pelo usuário. Desenvolvemos classes para entidades como Registro, Parametros, Cidade e Estação, além de serviços para realizar a associação e busca por essas entidades.</li>
+  <li><strong>MySQL</strong> – Serviu como o banco de dados da aplicação. Modelamos tabelas como `estacao`, `registro`, `parametros` e `cidade`. Utilizamos SQL para armazenar os dados registrados pelo usuário e para assim poder criar os gráficos necessários com base nos parâmetros obtidos</li>
+</ul>
 
 ### Soft Skills
 
 <ul>
-  <li>Trabalho em Equipe - Precisei confiar nos membros da equipe que iam fazer entregas do melhor jeito e oferecer apoio para qualquer dificuldade</li>
-  <li>Comunicação - A função da comunicação foi essencial para que todos soubesse o que entregar sem que haja dúvidas muito graves</li>
-  <li>Flexibilidade - Precisei adotar medidas mais flexíveis para garantir o bem estar da equipe embora demore um pouco para realizar a entrega</li>
+  <li>Trabalho em Equipe - Como Scrum Master, enfrentei o desafio de equilibrar autonomia e suporte, garantindo que a equipe se sentisse capacitada para entregar resultados com qualidade. Para isso, promovi um ambiente de confiança mútua, onde cada membro tinha clareza sobre suas responsabilidades, mas sabia que poderia contar com meu apoio em impedimentos técnicos ou burocráticos. Realizei check-ins individuais para entender dificuldades e facilitar soluções, além de incentivar a colaboração entre pares. O resultado foi um time mais coeso, com entregas consistentes e um aumento significativo na auto-organização.</li>
+  <li>Comunicação - Em um projeto com requisitos em evolução, a comunicação clara foi essencial para evitar retrabalhos e ambiguidades. Como Scrum Master, atuei como facilitador, garantindo que as informações fluíssem de forma transparente entre desenvolvedores, Product Owner e clientes. Implementei técnicas como Daily Objetivas (focadas em bloqueios) e revisões de backlog com linguagem não técnica para alinhar expectativas. Além disso, documentei decisões-chave em canais acessíveis. Essa abordagem reduziu as dúvidas críticas durante as sprints e aumentou a eficiência nas entregas.</li>
+  <li>Flexibilidade - Diante de uma equipe sobrecarregada e prazos realistas, priorizei o bem-estar do time sem comprometer o valor do produto. Adaptei o ritmo das sprints, negociando prazos com o Product Owner quando necessário, e introduzi práticas como buffer times para imprevistos. Promovi retrospectivas honestas para ajustar processos e, em casos específicos, aceitei entregas parciais para evitar burnout. Essa flexibilidade equilibrou sustentabilidade e resultados: a produtividade aumentou a longo prazo, e a equipe manteve um engajamento alto, mesmo em fases críticas.</li>
 </ul>
+
+### Dificuldades enfrentadas
+Por ter sido a primeira experiência como scrum master da API, tive que aprender a como gerir, direcionar a equipe e elaborar as entregas para que não haja dúvidas e desentendimentos por parte dos desenvolvedores. Embora os desafios foi feito um cumprimento satisfatório das entregas requisitadas pelo P2 dessa API.
 
 ### 2024-2
 
