@@ -267,8 +267,11 @@ Por ter sido a primeira experiência no desenvolvimento de API com cliente de ve
 
 [Link do Repositório Parent](https://github.com/MarcyLeite/fatec-api-4)
 
-A empresa parceira desse projeto foi a Visiona Tecnologia Espacial, instituição na qual é é uma joint-venture entre a Embraer Defesa & Segurança e a Telebras. Voltada para a integração de sistemas espaciais e à prestação de serviços baseados em satélites, a companhia atende aos objetivos do Programa Espacial Brasileiro e a demandas de mercado. O problema da empresa é a necessidade de captura e armazenamento de notícias etratégicas, empresas que dependem de informações estratégicas precisam acompanhar constantemente notícias e dados relevantes de fontes diversas, como portais de notícias e APIs públicas. No entanto, realizar essa captura manualmente é um processo demorado, sujeito a erros e com alto risco de perda de informações valiosas.
-A solução desse problema foi criar um sistema web para mapear portais de notícias estratégicas e realizar a captura automatizada e contínua de dados para formar um histórico. O sistema deve suportar tanto o registro de portais de notícias quanto de APIs de dados estratégicos, como previsões do tempo. A solução incluirá funcionalidades de cadastro de portais, APIs, tags e jornalistas, além de um processo de web scraping para coleta e armazenamento dos dados. Também deverá oferecer interfaces de consulta com filtros avançados e ser capaz de lidar com um grande volume de informações.
+A empresa parceira desse projeto foi a Visiona Tecnologia Espacial, uma joint-venture entre a Embraer Defesa & Segurança e a Telebras. A Visiona é responsável pela integração de sistemas espaciais e prestação de serviços baseados em satélites, alinhando-se com os objetivos do Programa Espacial Brasileiro e demandas de mercado.
+
+O problema apresentado consistia na necessidade de uma aplicação web que permitisse a comparação de performance entre analistas humanos e sistemas de inteligência artificial no processo de edição de mapas georreferenciados. A solução deveria contemplar um usuário analista capaz de receber e editar geometrias no formato GeoJSON, enquanto uma IA executaria a mesma tarefa em paralelo. Além disso, seriam necessários dashboards de produção acessíveis por consultores e administradores, fornecendo métricas comparativas de desempenho entre o trabalho humano e o automatizado, servindo como base para tomadas de decisão estratégicas.
+
+A solução desenvolvida foi um sistema web completo com capacidade de carregamento, visualização e edição de GeoJSONs representando talhões agrícolas. O sistema incorporou uma lógica de usuários multiperfil (administrador, analista e consultor) e dashboards analíticos que quantificavam e comparavam o volume e a precisão das alterações feitas pelos analistas em relação aos resultados gerados pela IA.
 
 ### Tecnologias usadas:
 <div align="left">
@@ -289,69 +292,49 @@ A solução desse problema foi criar um sistema web para mapear portais de notí
 ###
 
 ### Contribuições Pessoais
-<ul>
-  <li>
-    Método responsável pelo cadastro de Fazendas e Usuário
-    <details>
-      <summary>Ver detalhes</summary>
-      No back-end, desenvolvi os métodos <code>POST</code> em controladores Spring Boot (<code>FazendaController</code> e <code>UuarioController</code>) para receber dados JSON e persistir as entidades no banco usando JPA. Utilizei as anotações <code>@RequestBody</code> e <code>@PostMapping</code>, garantindo validação e integridade dos dados. No repositório, empreguei <code>save()</code> do <code>JpaRepository</code>. Isso garantiu a criação de novos registros tanto de tags quanto de portais de forma segura.
-    </details>
-  </li>
 
-  <li>
-    Página web que cadastra Fazenda e Usuários
-    <details>
-      <summary>Ver detalhes</summary>
-      No front-end, criei componentes Vue separados para o cadastro de fazendas e usuários. Utilizei <code>v-model</code> para fazer o binding dos inputs com os dados e <code>axios</code> para enviar os dados via requisições <code>POST</code> para os respectivos endpoints da API. Os formulários foram montados com HTML semântico, CSS para estilo, e validadores simples para impedir envios incompletos.
-    </details>
-  </li>
-
-  <li>
-    Método responsável pela listagem paginada de Fazenda e Usuário
-    <details>
-      <summary>Ver detalhes</summary>
-      No back-end, desenvolvi os métodos <code>GET</code> em controladores Spring Boot (<code>FazendaController</code> e <code>UuarioController</code>) para receber dados JSON e persistir as entidades no banco usando JPA. Utilizei a anotação <code>@GetMapping</code>, garantindo validação e integridade dos dados. No repositório, empreguei <code>save()</code> do <code>JpaRepository</code>. Isso garantiu a criação de novos registros tanto de tags quanto de portais de forma segura.
-    </details>
-  </li>
-
-  <li>
-    Correção de bug envolvendo senha do perfil
-    <details>
-      <summary>Ver detalhes</summary>
-      Corrigi um bug que não criptografava as senhas dos usuários
-    </details>
-  </li>
-
-  <li>
-    Toda documentação em relação ao produto
-    <details>
-      <summary>Ver detalhes</summary>
-      Como PO da equipe fui responsável pela parte do planejamento do produto como backlog, user stories, sprint backlog, manual de usuário e, principalmente a interação com o cliente
-    </details>
-  </li>
+<ul> 
+  <li> Método responsável pelo cadastro de Fazendas e Usuário <details> <summary>Ver detalhes</summary> Desenvolvi os endpoints RESTful <code>POST</code> nos controladores Spring Boot (<code>FazendaController</code> e <code>UsuarioController</code>) para receber dados JSON via <code>@RequestBody</code> e persistir as entidades no banco de dados utilizando JPA. Implementei validações robustas com Bean Validation (<code>@Valid</code>) para garantir a integridade dos dados, tratamento de exceções personalizadas e utilizei métodos <code>save()</code> do <code>JpaRepository</code> para operações de persistência seguras e transacionais. </details> </li> 
+  
+  <li> Página web que cadastra Fazenda e Usuários <details> <summary>Ver detalhes</summary> Criei componentes Vue.js single-file components com composition API para os formulários de cadastro de fazendas e usuários. Utilizei <code>v-model</code> para data binding reativo, Vuelidate para validações no front-end e Axios para realizar requisições <code>POST</code> assíncronas para os endpoints da API. A interface foi desenvolvida com Vuetify para garantir consistência visual e responsividade. </details> </li> 
+  
+  <li> Método responsável pela listagem paginada de Fazenda e Usuário <details> <summary>Ver detalhes</summary> Implementei endpoints <code>GET</code> com suporte a paginação utilizando <code>Pageable</code> do Spring Data. Configurei parâmetros de consulta para filtros opcionais, ordenação personalizável e retorno eficiente de grandes conjuntos de dados através de projeções JPA, melhorando significativamente o desempenho das listagens. </details> </li> 
+  
+  <li> Correção de bug envolvendo senha do perfil <details> <summary>Ver detalhes</summary> Identifiquei e corrigi uma vulnerabilidade crítica onde as senhas dos usuários estavam sendo armazenadas em texto plano. Implementei hashing seguro com BCryptPasswordEncoder do Spring Security, adicionei validação de complexidade de senhas e garanti que todas as credenciais existentes fossem migradas com segurança para o novo formato criptografado. </details> </li> 
+  
+  <li> Toda documentação em relação ao produto <details> <summary>Ver detalhes</summary> Como Product Owner, fui responsável por toda a documentação do produto, incluindo: elaboração do backlog priorizado com metodologia MoSCoW, escrita de user stories com critérios de aceitação claros, definição do sprint backlog, criação do manual do usuário e manutenção da comunicação constante com o cliente para validação de requisitos e expectativas. </details> </li> 
 </ul>
-
 
 ### Hard Skills
+
 <ul> 
-  <li><strong>Git</strong> – Utilizado diariamente para versionar o código-fonte da aplicação. Trabalhamos com ramificações específicas para funcionalidades (feature branches), criamos pull requests para revisão de código e resolvemos conflitos em equipe, garantindo organização e segurança no controle de versões do projeto colaborativo.</li> 
-  <li><strong>Java</strong> – Linguagem utilizada para construir toda a lógica de negócio da aplicação, como o tratamento das requisições do front-end, a integração com o banco de dados e o processamento das imagens de satélites fornecidas Desenvolvemos classes para entidades como Fazenda, Talhão, Usuário e etc, além de serviços para realizar a associação e busca por essas entidades.</li>
-  <li><strong>Spring Boot</strong> – Framework usado para estruturar a API REST que permitia ao front-end consultar e cadastrar dados como talhão, fazenda e usuários. Com ele, criamos os controladores, endpoints, camadas de serviço e repositórios JPA para gerenciar o fluxo completo de dados entre backend, banco e front-end.</li>
-  <li><strong>PostgreSQL</strong> – Serviu como o banco de dados da aplicação. Modelamos as entidades criadas e geramos tabelas de associação para representar os relacionamentos entre elas. Utilizamos SQL e JPA para armazenar as notícias capturadas pelo crawler e consultá-las conforme as tags e portais selecionados pelo usuário.</li>
-  <li><strong>Docker</strong> – Empregado para padronizar o ambiente da aplicação. Criamos contêineres para o back-end, banco de dados e crawler, utilizando `Dockerfile` e `docker-compose` para garantir que toda a equipe pudesse rodar o sistema localmente de forma uniforme, além de facilitar o deploy.</li>
-  <li><strong>Vue.js</strong> – Utilizado na construção da interface web da aplicação. Desenvolvemos componentes que permitiam ao usuário cadastrar e visualizar tags, portais e resultados de busca. A interface consumia os dados da API de forma reativa e dinâmica, possibilitando a busca de notícias em tempo real a partir de critérios definidos.</li>
-  <li><strong>Vue.js</strong> – Essa ferramenta foi responsável por implementarmos de forma mais rápida e simples o html e css, nos permitindo ter um foco maior na lógica por trás da aplicação</li>
-  <li><strong>Oracle Cloud</strong> – Hospodedamos o banco de dados da aplicação na nuvem da Oracle.</li>
+  <li><strong>Git</strong> – Utilizado diariamente para versionamento colaborativo do código-fonte, seguindo um fluxo de trabalho baseado em feature branches. Realizei code reviews através de pull requests, resolvi conflitos de merge e mantive um histórico limpo e organizado do desenvolvimento do projeto.</li> 
+  
+  <li><strong>Java</strong> – Linguagem principal para desenvolvimento do back-end, onde implementei a lógica de negócio, tratamento de requisições HTTP, integração com banco de dados e processamento de dados geoespaciais. Desenvolvi entidades JPA como Fazenda, Talhão e Usuário com seus respectivos relacionamentos.</li> 
+  
+  <li><strong>Spring Boot</strong> – Framework utilizado para construir a API RESTful completa, incluindo controladores, serviços, repositórios e configurações de segurança. Implementei injeção de dependência, transações management e tratamento global de exceções para criar uma arquitetura robusta e escalável.</li>
+  
+  <li><strong>PostgreSQL</strong> – Banco de dados relacional utilizado para persistência das informações. Modelei o schema das tabelas, otimizei queries com índices estratégicos e utilizei o suporte nativo a tipos geográficos para armazenamento eficiente dos GeoJSONs.</li> 
+  
+  <li><strong>Docker</strong> – Empreguei para containerizar a aplicação, criando Dockerfiles personalizados para back-end, front-end e banco de dados. Utilizei docker-compose para orquestração dos serviços, garantindo consistência entre ambientes de desenvolvimento e facilitando o deployment.</li> 
+  
+  <li><strong>Vue.js</strong> – Framework front-end utilizado para construir a interface web reativa. Desenvolvi componentes modulares, gerenciamento de estado com Vuex, roteamento com Vue Router e integração com a API back-end através de serviços HTTP.</li> 
+  
+  <li><strong>Vuetify</strong> – Biblioteca de componentes Material Design que acelerou o desenvolvimento da UI, proporcionando uma experiência consistente e responsiva across diferentes devices e browsers.</li> 
+  
+  <li><strong>Oracle Cloud</strong> – Utilizei a infraestrutura cloud da Oracle para hospedar a instância do banco de dados PostgreSQL, configurando backups automáticos, monitoramento de performance e políticas de segurança.</li> 
 </ul>
 
-###
-
 ### Soft Skills
+
 <ul> 
-  <li><strong>Comunicação</strong> – Por ter sido PO dessa API, precisei ter uma comunicação bastante clara e suscinta com o cliente para garantir clareza sobre o produto que estávamos elaborando. Essa troca constante foi essencial para encontrar soluções eficientes e manter a fluidez no andamento da equipe.</li> 
-  <li><strong>Trabalho em Equipe</strong> – A colaboração entre os membros foi fundamental para o sucesso da API. Participei ativamente de reuniões de alinhamento, dividi responsabilidades com clareza e mantive um canal aberto para revisões de código e suporte mútuo. A soma de conhecimentos e o respeito pelas ideias dos colegas resultaram em um desenvolvimento mais ágil e com maior qualidade técnica.</li> 
-  <li><strong>Resiliência</strong> – Enfrentei prazos curtos, bugs inesperados e dificuldades de compreensão de requisitos. Mesmo diante desses obstáculos, mantive o foco e a motivação. Organizei prioridades, reestruturei tarefas e, com esforço contínuo, garanti que as entregas fossem feitas com qualidade, respeitando os prazos estabelecidos.</li> 
+  <li><strong>Comunicação</strong> – Como Product Owner, mantive comunicação clara e constante com o cliente da Visiona, traduzindo requisitos técnicos complexos em linguagem acessível e garantindo alinhamento total sobre expectativas e entregas. Facilitou a comunicação entre stakeholders técnicos e não-técnicos.</li> 
+  
+  <li><strong>Trabalho em Equipe</strong> – Colaborei efetivamente em um ambiente multifuncional, participando ativamente de reuniões de planejamento, revisões de código pareadas e sessões de troubleshooting coletivo. Promovi um ambiente de aprendizado mútuo e divisão equilibrada de tarefas.</li> 
+  
+  <li><strong>Resiliência</strong> – Enfrentei desafios como prazos apertados, requisitos em evolução e problemas técnicos complexos. Mantive foco nas soluções, adaptando planos quando necessário e perseverando até encontrar abordagens eficazes para cada obstáculo encontrado.</li> 
 </ul>
 
 ### Dificuldades enfrentadas
-Por ter sido a primeira experiência como PO da API, foi uma dificuldade eu entender o que era ser um bom produt owner; quais perguntas fazer para o cliente; como estrturar a documentação e ter total clareza sobre o produto que iríamos entregasr.
+
+Como primeira experiência atuando como Product Owner, enfrentei desafios significativos em entender profundamente o papel e suas responsabilidades. Aprendi a formular as perguntas certas para extrair requisitos completos do cliente, desenvolver técnicas para estruturar documentação técnica de forma clara e compreensível, e principalmente, como manter visibilidade total sobre o produto que estaríamos entregando, garantindo que atendesse tanto às necessidades do cliente quanto fosse tecnicamente viável para a equipe de desenvolvimento.
