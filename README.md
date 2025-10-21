@@ -343,6 +343,8 @@ Como primeira experiência atuando como Product Owner, enfrentei desafios signif
 
 [Link do Repositório Parent](https://github.com/c137santos/FATEC-API-5-SEMESTRE)
 
+A Necto Systems é um parceiro de software para organizações que reconhecem o valor de ter as ferramentas adequadas para maximizar o potencial de suas equipes.
+
 Esse desafio consiste em criar uma ferramenta analítica que consuma dados diretamente por meio da api do jira, consolide-os em um data warehouse e permita gerar indicadores, dashboard e boards sobre o andamento do projeto.
 
 A solução chamada Jiboia é um sistema de ETL de dados do Jira que transforma informações brutas em métricas úteis para acompanhamento de projetos. O objetivo é dar visibilidade sobre o andamento, esforço e performance das equipes, oferecendo dashboards detalhados tanto em nível de projetos quanto de issues.
@@ -371,15 +373,15 @@ A solução chamada Jiboia é um sistema de ETL de dados do Jira que transforma 
 ### Contribuições Pessoais
 
 <ul> 
-  <li> Método responsável pelo cadastro de Fazendas e Usuário <details> <summary>Ver detalhes</summary> Desenvolvi os endpoints RESTful <code>POST</code> nos controladores Spring Boot (<code>FazendaController</code> e <code>UsuarioController</code>) para receber dados JSON via <code>@RequestBody</code> e persistir as entidades no banco de dados utilizando JPA. Implementei validações robustas com Bean Validation (<code>@Valid</code>) para garantir a integridade dos dados, tratamento de exceções personalizadas e utilizei métodos <code>save()</code> do <code>JpaRepository</code> para operações de persistência seguras e transacionais. </details> </li> 
+  <li> Elaboração do modelo de dados <details> <summary>Ver detalhes</summary> Desenvolvi os endpoints RESTful <code>POST</code> nos controladores Spring Boot (<code>FazendaController</code> e <code>UsuarioController</code>) para receber dados JSON via <code>@RequestBody</code> e persistir as entidades no banco de dados utilizando JPA. Implementei validações robustas com Bean Validation (<code>@Valid</code>) para garantir a integridade dos dados, tratamento de exceções personalizadas e utilizei métodos <code>save()</code> do <code>JpaRepository</code> para operações de persistência seguras e transacionais. </details> </li> 
   
-  <li> Página web que cadastra Fazenda e Usuários <details> <summary>Ver detalhes</summary> Criei componentes Vue.js single-file components com composition API para os formulários de cadastro de fazendas e usuários. Utilizei <code>v-model</code> para data binding reativo, Vuelidate para validações no front-end e Axios para realizar requisições <code>POST</code> assíncronas para os endpoints da API. A interface foi desenvolvida com Vuetify para garantir consistência visual e responsividade. </details> </li> 
+  <li> Método de listagem geral de projetos <details> <summary>Ver detalhes</summary> Criei componentes Vue.js single-file components com composition API para os formulários de cadastro de fazendas e usuários. Utilizei <code>v-model</code> para data binding reativo, Vuelidate para validações no front-end e Axios para realizar requisições <code>POST</code> assíncronas para os endpoints da API. A interface foi desenvolvida com Vuetify para garantir consistência visual e responsividade. </details> </li> 
   
-  <li> Método responsável pela listagem paginada de Fazenda e Usuário <details> <summary>Ver detalhes</summary> Implementei endpoints <code>GET</code> com suporte a paginação utilizando <code>Pageable</code> do Spring Data. Configurei parâmetros de consulta para filtros opcionais, ordenação personalizável e retorno eficiente de grandes conjuntos de dados através de projeções JPA, melhorando significativamente o desempenho das listagens. </details> </li> 
+  <li> Método responsável pela listagem Issues <details> <summary>Ver detalhes</summary> Implementei endpoints <code>GET</code> com suporte a paginação utilizando <code>Pageable</code> do Spring Data. Configurei parâmetros de consulta para filtros opcionais, ordenação personalizável e retorno eficiente de grandes conjuntos de dados através de projeções JPA, melhorando significativamente o desempenho das listagens. </details> </li> 
   
-  <li> Correção de bug envolvendo senha do perfil <details> <summary>Ver detalhes</summary> Identifiquei e corrigi uma vulnerabilidade crítica onde as senhas dos usuários estavam sendo armazenadas em texto plano. Implementei hashing seguro com BCryptPasswordEncoder do Spring Security, adicionei validação de complexidade de senhas e garanti que todas as credenciais existentes fossem migradas com segurança para o novo formato criptografado. </details> </li> 
+  <li> View page de exibição das Issues <details> <summary>Ver detalhes</summary> Identifiquei e corrigi uma vulnerabilidade crítica onde as senhas dos usuários estavam sendo armazenadas em texto plano. Implementei hashing seguro com BCryptPasswordEncoder do Spring Security, adicionei validação de complexidade de senhas e garanti que todas as credenciais existentes fossem migradas com segurança para o novo formato criptografado. </details> </li> 
   
-  <li> Toda documentação em relação ao produto <details> <summary>Ver detalhes</summary> Como Product Owner, fui responsável por toda a documentação do produto, incluindo: elaboração do backlog priorizado com metodologia MoSCoW, escrita de user stories com critérios de aceitação claros, definição do sprint backlog, criação do manual do usuário e manutenção da comunicação constante com o cliente para validação de requisitos e expectativas. </details> </li> 
+  <li> Manutenção do SonnarQube <details> <summary>Ver detalhes</summary> Como Product Owner, fui responsável por toda a documentação do produto, incluindo: elaboração do backlog priorizado com metodologia MoSCoW, escrita de user stories com critérios de aceitação claros, definição do sprint backlog, criação do manual do usuário e manutenção da comunicação constante com o cliente para validação de requisitos e expectativas. </details> </li> 
 </ul>
 
 ### Hard Skills
@@ -387,11 +389,11 @@ A solução chamada Jiboia é um sistema de ETL de dados do Jira que transforma 
 <ul> 
   <li><strong>Git</strong> – Utilizado diariamente para versionamento colaborativo do código-fonte, seguindo um fluxo de trabalho baseado em feature branches. Realizei code reviews através de pull requests, resolvi conflitos de merge e mantive um histórico limpo e organizado do desenvolvimento do projeto.</li> 
   
-  <li><strong>Java</strong> – Linguagem principal para desenvolvimento do back-end, onde implementei a lógica de negócio, tratamento de requisições HTTP, integração com banco de dados e processamento de dados geoespaciais. Desenvolvi entidades JPA como Fazenda, Talhão e Usuário com seus respectivos relacionamentos.</li> 
+  <li><strong>Python</strong> – Linguagem principal para desenvolvimento do back-end, onde implementei a lógica de negócio, tratamento de requisições HTTP, integração com banco de dados e regras de negócio para formação de dashboards. Foram desenvolvidas entidades como Issue, Projeto e Usuário com seus respectivos relacionamentos.</li> 
   
-  <li><strong>Spring Boot</strong> – Framework utilizado para construir a API RESTful completa, incluindo controladores, serviços, repositórios e configurações de segurança. Implementei injeção de dependência, transações management e tratamento global de exceções para criar uma arquitetura robusta e escalável.</li>
+  <li><strong>Django</strong> – Framework utilizado para construir a API RESTful completa, incluindo views, services, models e configurações de segurança. Implementei injeção de dependência, transações management e tratamento global de exceções para criar uma arquitetura robusta e escalável.</li>
   
-  <li><strong>PostgreSQL</strong> – Banco de dados relacional utilizado para persistência das informações. Modelei o schema das tabelas, otimizei queries com índices estratégicos e utilizei o suporte nativo a tipos geográficos para armazenamento eficiente dos GeoJSONs.</li> 
+  <li><strong>PostgreSQL</strong> – Banco de dados relacional utilizado para persistência das informações. Foi criado schemas diferentes com um modelo de dados padrão e outro modelo Snowflake para a produção dos dashboards.</li> 
   
   <li><strong>Docker</strong> – Empreguei para containerizar a aplicação, criando Dockerfiles personalizados para back-end, front-end e banco de dados. Utilizei docker-compose para orquestração dos serviços, garantindo consistência entre ambientes de desenvolvimento e facilitando o deployment.</li> 
   
@@ -399,16 +401,18 @@ A solução chamada Jiboia é um sistema de ETL de dados do Jira que transforma 
   
   <li><strong>Vuetify</strong> – Biblioteca de componentes Material Design que acelerou o desenvolvimento da UI, proporcionando uma experiência consistente e responsiva across diferentes devices e browsers.</li> 
   
-  <li><strong>Oracle Cloud</strong> – Utilizei a infraestrutura cloud da Oracle para hospedar a instância do banco de dados PostgreSQL, configurando backups automáticos, monitoramento de performance e políticas de segurança.</li> 
+  <li><strong>AWS</strong> – Utilizei a infraestrutura da AWS como servidor para hospedar nossa aplicação, configurando backups automáticos, monitoramento de performance e políticas de segurança.</li> 
 </ul>
 
 ### Soft Skills
 
 <ul> 
-  <li><strong>Comunicação</strong> – Como Product Owner, mantive comunicação clara e constante com o cliente da Visiona, traduzindo requisitos técnicos complexos em linguagem acessível e garantindo alinhamento total sobre expectativas e entregas. Facilitou a comunicação entre stakeholders técnicos e não-técnicos.</li> 
+  <li><strong>Comunicação</strong> – Como Product Owner, mantive comunicação clara e constante com o cliente da Necto, traduzindo requisitos técnicos complexos em linguagem acessível e garantindo alinhamento total sobre expectativas e entregas. Facilitou a comunicação entre stakeholders técnicos e não-técnicos.</li> 
   
   <li><strong>Trabalho em Equipe</strong> – Colaborei efetivamente em um ambiente multifuncional, participando ativamente de reuniões de planejamento, revisões de código pareadas e sessões de troubleshooting coletivo. Promovi um ambiente de aprendizado mútuo e divisão equilibrada de tarefas.</li> 
-  
+    
+  <li><strong>Adaptação</strong> – Por se tratar de uma arquiterura e infraestrutura diferente da qual estava acostumado, precisei me adaptar a nova proposta com Python e Django para poder realizar o projeto da melhor forma possível.</li> 
+    
   <li><strong>Resiliência</strong> – Enfrentei desafios como prazos apertados, requisitos em evolução e problemas técnicos complexos. Mantive foco nas soluções, adaptando planos quando necessário e perseverando até encontrar abordagens eficazes para cada obstáculo encontrado.</li> 
 </ul>
 
